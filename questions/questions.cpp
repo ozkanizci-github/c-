@@ -209,6 +209,7 @@ cout << "Sayilarin toplami:" << toplam;
 
 /* n tane girilen sayý içerisinden pozitif, negatif sayýlarýn ve 0 sayýsýnýn adedini ekrana yazan programý c++ dilinde yazýnýz.*/
     /*
+    
     int sayi, neg = 0, poz = 0, sifir  = 0, n;
     cout << "Kaç sayi gireceksiniz:";
     cin >> n;
@@ -235,7 +236,7 @@ cout << "Sayilarin toplami:" << toplam;
     cout << "Negatif sayilari yaz:" << neg << endl;
     cout << "Sifir sayilari yaz:" << sifir << endl;
     */
-
+   
 /*////////////////Rastgele girilen n tane sayý içerisinde tek sayýlarý 1 arttýrýp karelerini alýp toplayan, çift sayýlarýn kareköklerini alýp toplayan ve tek ve çift sayýlarýn adetlerini ekrana yazan programý c++ dilinde yazýnýz.*/
     /*
     int n, sayi, tadet, cadet;
@@ -303,6 +304,126 @@ cout << "Sayilarin toplami:" << toplam;
     */
 
 /*Girilen bir sayýnýn palidrom sayý olup olmadýðýný ekrana yazan programý c++ dilinde yazýnýz*/
+    /*
+    int a, no, b, temp = 0;
+    cout << "Herhangi bir sayi giriniz: ";
+    cin >> no;
+    b = no;
+    while (no > 0)
+    {
+        a = no % 10;
+        no = no / 10;
+        temp = temp * 10 + a;
+    }
+
+    if (temp == b)
+    {
+        cout << "Girilen Sayi Palindrom";
+    }
+    else
+    {
+        cout << "Girilen Sayi Palindrom Degil";
+    }
+    return 0;
+
+    */
+   
+/* Bir sayýnýn kendisi hariç pozitif tam sayý çarpanlarý (kalansýz bölen sayýlarýn) toplamý kendisine eþit olan sayýya mükemmel sayý denir. Klavyeden girilen bir sayýnýn mükemmel sayý olup/olmadýðýný bulan ve sayý mükemmel sayý ise ekrana “mukemmel sayidir.” deðilse “mukemmel sayi degildir.” ibaresini ekrana yazan programý Java dilinde yazýnýz.*/
+    /*
+    int toplam = 0, sayac = 1, sayi;
+        cout << "Lutfen sayi giriniz:";
+        cin >> sayi;
+        if (sayi ==1)
+        {
+            cout << "Sayi mukemel sayi degildir.: ";
+        }
+        else
+        {
+            while (sayac<sayi)
+            {
+                int kalan = sayi % sayac;
+                if (kalan == 0)
+                {
+                    toplam += sayac;
+                }
+                sayac++;
+            }
+            if (toplam == sayi)
+            {
+                cout << "Sayi mukemel sayidir.:" << sayi;
+            }
+            else
+            {
+                cout << "Sayi mukemel sayi degildir.:"<< sayi;
+            }
+        }
+
+    */
+
+/*Ýki basamaklý iki doðal sayýnýn birler basamaðýndaki rakamlarýn toplamý 10 ve onlar basamaðýndaki rakamlarý ayný ise bu iki doðal sayýya baðdaþýk sayý denir. Klavyeden girilen iki doðal sayýnýn baðdaþýk sayý olup/olmadýðýný bulan ve de baðdaþýk sayý ise “Bagdasik sayilardir.” deðilse “Bagdasik sayilar degil.” ibaresini ekrana yazan programý Java dilinde yazýnýz.*/
+    /*
+int sayi1, sayi2, xBirler, yBirler, xOnlar, yOnlar;
+cout << "Lutfen sayi1 giriniz.:";
+cin >> sayi1;
+cout << "Lutfen sayi2 giriniz.:";
+cin >> sayi2;
+if (((sayi1 >= 10) && (sayi1<=99)) || ((sayi2 >= 10) && (sayi2 <= 99)))
+{
+    xBirler = sayi1 % 10;
+    yBirler = sayi2 % 10;
+    if (xBirler + yBirler == 10)
+    {
+        xOnlar = (sayi1 - xBirler) % 10;
+        yOnlar = (sayi2 - yBirler) % 10;
+        if (xOnlar == yOnlar)
+        {
+            cout << "Sayimiz bagdasik sayidir";
+        }
+        else
+        {
+            cout << "Sayimiz bagdasik sayi degildir";
+        }
+    }
+    cout << "Sayi iki basamakli bir sayidir.:";
+}
+*/
+
+/*Klavyeden 50 adet tamsayý okuyup bunlarý bir diziye atan, daha sonra bu dizideki elemanlarýn aritmetik ortalamasýný bulup ekrana yazan programý yazýnýz.
+*/
+    /*
+    int toplam = 0, sayilar = 0;
+    double ortalama = 0;
+    int dizi[50];
+    for (int i = 0; i <50; i++)
+    {
+        sayilar = i;
+        dizi[i] = sayilar;
+        toplam = toplam + dizi[i];
+        ortalama = toplam / 50;
+    }
+    for (int y = 0; y <50; y++)
+    {
+        cout << "Dizi Listesi: " << dizi[y] << endl;
+    }
+    cout << "Dizi toplami: " << toplam << endl;
+    cout << "Dizi ortalama: " << ortalama;
+    */
+
+/*Klavyeden girilecek herhangi bir kelimeyi prçalayip ekrana yazdiran programý yazýnýz :*/
+    /*
+string kelime;
+cout << "Lutfen kelimeyi giriniz:";
+cin >> kelime;
+for (int i = 1; i <= kelime.length(); i++)
+{
+    cout << "Parvali hali.:" << kelime.substr(0, i)<< endl;
+}
+cout << "Parvali hali.:" << kelime.length() << endl;
+cout << "Parvali hali.:" << kelime.c_str() << endl;
+cout << "Parvali hali.:" << kelime.capacity() << endl;
+cout << "Parvali hali.:" << kelime.data() << endl;
+*/
+
 
 
 
