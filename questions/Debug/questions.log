@@ -1,3 +1,2 @@
 ﻿  questions.cpp
-C:\Users\Asus\source\repos\questions\questions\questions.cpp(416,19): warning C4018: '<=': signed/unsigned mismatch
   questions.vcxproj -> C:\Users\Asus\source\repos\questions\Debug\questions.exe

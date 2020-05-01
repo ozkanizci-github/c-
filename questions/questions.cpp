@@ -410,6 +410,7 @@ if (((sayi1 >= 10) && (sayi1<=99)) || ((sayi2 >= 10) && (sayi2 <= 99)))
     */
 
 /*Klavyeden girilecek herhangi bir kelimeyi prçalayip ekrana yazdiran programı yazınız :*/
+
     /*
 string kelime;
 cout << "Lutfen kelimeyi giriniz:";
@@ -423,6 +424,8 @@ cout << "Parvali hali.:" << kelime.c_str() << endl;
 cout << "Parvali hali.:" << kelime.capacity() << endl;
 cout << "Parvali hali.:" << kelime.data() << endl;
 */
+
+
 
 
 
